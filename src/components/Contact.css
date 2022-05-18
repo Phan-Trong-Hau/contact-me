@@ -1,0 +1,117 @@
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+section > h5 {
+    color: #c9c9d3;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+}
+
+section > h2 {
+    color: #4db5ff;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.contact-container {
+    width: 58%;
+    display: grid;
+    grid-template-columns: 33% 58%;
+    gap: 6%;
+    color: #fff;
+    margin: 100px auto;
+}
+
+.contact__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact__option {
+    background: #2c2c6c;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all 0.4s ease-out;
+}
+
+.contact__option:hover {
+    background: transparent;
+    border-color: rgba(77, 181, 255, 0.4);
+}
+
+.contact__option--icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact__option a {
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #4db5ff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input,textarea {
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid rgba(77, 181, 255, 0.4);
+    resize: none;
+    color: rgb(255, 255, 255);
+}
+
+.btn {
+    padding: 1.2rem;
+    font-size: 1.7rem;
+    width: 15rem;
+    background: #4db5ff;
+    border-radius: 0.4rem;
+    border: 1px solid #4db5ff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #fff;
+    border-color: #4db5ff;
+    transition: all 0.3s ease-in;
+}
+
+footer {
+    color: rgb(199, 199, 199);
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    .contact-container {
+        width: 86%;
+    }
+}
